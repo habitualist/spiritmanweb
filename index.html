@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPIRITMAN NETWORK</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="spirit.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+
+
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+ <header class="shadow-sm bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      
+      <!-- Brand / Logo -->
+<a href="index.html" class="navbar-brand">
+  <img src="asset/logo saf 2big.png" alt="Spiritman Network Logo" height="50">
+</a>
+
+      <!-- Join Us Button -->
+      <a href="join.html" class="btn btn-primary d-lg-none ms-3 mb-2 mb-lg-0">Join Us</a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gospel-prayer.html">Gospel Prayer Network</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="kingdom-leaders.html">Kingdom Missionary Leaders</a>
+          </li>
+
+          <!-- More Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a class="dropdown-item" href="salvation.html">Salvation</a></li>
+              <li><a class="dropdown-item" href="prayer-request.html">Prayer Request</a></li>
+              <li><a class="dropdown-item" href="share-testimony.html">Share Testimony</a></li>
+              <li><a class="dropdown-item" href="join-online-cell.html">Join Online Cell</a></li>
+              <li><a class="dropdown-item" href="foundation-school.html">Foundation School</a></li>
+              <li><a class="dropdown-item" href="articles.html">Articles</a></li>
+              <li><a class="dropdown-item" href="podcasts.html">Podcasts</a></li>
+              <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+              <li><a class="dropdown-item" href="give.html">Give</a></li>
+              <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item d-none d-lg-block ms-3">
+            <a href="join.html" class="btn btn-primary">Join Us</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Hero / Carousel Section -->
+<section id="hero">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1: Image -->
+      <div class="carousel-item active">
+        <div class="hero-slide position-relative text-white"
+             style="background-image: url('asset/SLIDE BANNERS 2.png');">
+          <!-- <div class="content top-left">
+            <h1 class="display-4 fw-bold">ARE YOU BORN AGAIN?</h1>
+            <p class="lead fw-bold">Experience the power of prayer and grow in faith.</p>
+            <a href="prayer.html" class="btn btn-primary mt-3">Join Us</a>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Slide 2: Video -->
+      <div class="carousel-item">
+        <div class="hero-slide position-relative text-white">
+
+          <video class="video-bg" autoplay muted loop playsinline>
+            <source src="asset/WhatsApp Video 2025-11-25 at 16.44.37_fa050d64.mp4" type="video/mp4">
+          </video>
+
+          <div class="overlay"></div>
+
+          <!-- <div class="content top-left">
+            <h1 class="display-4 fw-bold">Kingdom Missionary Leaders</h1>
+            <p class="lead fw-bold">Training the next generation of spiritual leaders.</p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Slide 3: Image -->
+      <div class="carousel-item">
+        <div class="hero-slide position-relative text-white"
+             style="background-image: url('asset/SLIDE BANNERS 1.png');">
+          <!-- <div class="content top-left">
+            <h1 class="display-4 fw-bold">This Gospel Prayer Network</h1>
+            <p class="lead fw-bold">Join our community and experience powerful prayer sessions.</p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Slide 4: Video -->
+      <div class="carousel-item">
+        <div class="hero-slide position-relative text-white">
+
+          <video class="video-bg" autoplay muted loop playsinline>
+            <source src="asset/WhatsApp Video 2025-11-25 at 16.45.29_f3662456.mp4" type="video/mp4">
+          </video>
+
+          <div class="overlay"></div>
+
+          <!-- <div class="content top-left">
+            <h1 class="display-4 fw-bold">Join SPIRITMAN Online</h1>
+            <p class="lead fw-bold">Transforming lives through the Gospel.</p>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Prev / Next Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- WATCH ONLINE SERVICE SECTION -->
+<section class="py-5 bg-light" id="watch-online">
+  <div class="container">
+
+    <!-- Title -->
+    <h2 class="fw-bold mb-4 text-center">Watch Online Church Service / Programs</h2>
+
+    <div class="row g-4">
+
+      <!-- Video Area -->
+      <div class="col-lg-7">
+        <div class="card shadow-sm border-0">
+          <div class="ratio ratio-16x9">
+            <!-- Replace with your embed source -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TyhFOnFBxp0?si=TxqGthj9Xd074dvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <!-- Under-video Title -->
+          <div class="p-3">
+            <h5 class="fw-bold mb-1">SUNDAY SERVICE /PROGRAMS</h5>
+            <small class="text-muted">Streaming now</small>
+          </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="mt-4">
+          <h5 class="fw-bold">Post Your Comments Below:</h5>
+          <textarea class="form-control mt-2" rows="4" placeholder="Write your comment..."></textarea>
+          <button class="btn btn-primary mt-3">Submit Comment</button>
+        </div>
+      </div>
+
+      <!-- Buttons + Today’s Rhapsody -->
+      <div class="col-lg-5">
+        <!-- Language Buttons -->
+        <div class="d-flex gap-3 mb-4">
+          <button class="btn btn-outline-primary w-50">English</button>
+          <button class="btn btn-outline-secondary w-50">Spanish</button>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="salvation.html" class="btn btn-primary flex-fill">Salvation</a>
+          <a href="give.html" class="btn btn-success flex-fill">Give</a>
+          <a href="prayer-request.html" class="btn btn-warning flex-fill text-dark">Prayer Request</a>
+        </div>
+
+        <!-- Rhapsody Insight -->
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="fw-bold">Today’s Rhapsody Insight</h5>
+            <p class="text-muted small">
+              Faith is acting on the Word. When you speak God's Word, you release divine energy that changes circumstances...
+            </p>
+
+            <!-- Optional Video -->
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="asset/RHAP.mp4" allowfullscreen></iframe>
+            </div>
+
+            <a href="full-article.html" class="btn btn-outline-primary w-100">
+              Click to Read Full Article
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 3: START AFRESH – SAY THE SALVATION PRAYER -->
+<section id="salvation-section" class="section-banner py-5">
+  <div class="container text-center">
+
+    <!-- Section Heading -->
+    <h2 class="section-title text-uppercase mb-4">
+      Start Afresh – Say the Salvation Prayer
+    </h2>
+
+    <!-- Clickable Banner -->
+    <div 
+      class="salvation-banner-link d-block mx-auto position-relative rounded shadow-lg"
+      style="cursor:pointer; max-width:85%;"
+      data-bs-toggle="modal" 
+      data-bs-target="#salvationModal"
+    >
+      <img 
+        src="asset/salvation banner.jpeg" 
+        alt="Salvation Banner" 
+        class="salvation-banner-img rounded w-100"
+      >
+
+      <!-- Hover Overlay with Icon -->
+      <div class="banner-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <i class="fas fa-pray fa-3x text-white"></i>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="salvationModal" tabindex="-1" aria-labelledby="salvationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-4">
+          <h5 class="modal-title mb-3" id="salvationModalLabel">Say the Salvation Prayer</h5>
+          <div class="modal-body">
+            <p>
+              “O Lord God, I come to You today in the Name of Jesus.<br>
+              I believe in my heart that Jesus Christ is the Son of God.<br>
+              I believe He died for me and that God raised Him from the dead.<br>
+              I confess with my mouth that Jesus Christ is the Lord of my life from this day.<br>
+              Thank You, Lord, for saving my soul.”
+            </p>
+            <a 
+              href="https://wa.me/2347031198484?text=I%20just%20said%20the%20salvation%20prayer" 
+              target="_blank" 
+              class="btn btn-whatsapp btn-lg mt-3"
+            >
+              I Said the Prayer
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- SECTIONS 4 & 5: Dual Cards with Icons -->
+<section id="dual-section" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- SECTION 4 CARD -->
+      <div class="col-lg-6">
+        <div class="card dual-card h-100 text-center p-4">
+          <!-- Icon -->
+          <div class="icon-circle mb-3">
+            <i class="fas fa-praying-hands fa-2x"></i>
+          </div>
+          <h2 class="card-title mb-3">Welcome To This Gospel Prayer Network</h2>
+          <!-- <p class="card-text mb-3">
+            We are here to guide you in the faith of our Lord Jesus Christ and pray with you.
+          </p> -->
+          <p class="card-text mb-3">
+            Call us or send a chat: <br>
+            +2349027028252, +237679080648
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="join-online-cell.html" class="btn btn-primary">Join TGPN Online Cell</a>
+            <a href="prayer-request.html" class="btn btn-secondary">Send Prayer Request</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 5 CARD -->
+      <div class="col-lg-6">
+        <div class="card dual-card h-100 text-center p-4">
+          <!-- Icon -->
+          <div class="icon-circle mb-3">
+            <i class="fas fa-bullhorn fa-2x"></i>
+          </div>
+          <h2 class="card-title mb-3">BECOME A DIGITAL EVANGELIST</h2>
+          <p class="card-text mb-4">
+            JOIN – Kingdom Missionary Leaders Today
+          </p>
+          <a href="kingdom-leaders.html" class="btn btn-primary">Join Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: GET INSPIRED WITH ARTICLES AND TRAININGS -->
+<section id="inspiration-section" class="section-banner">
+  <div class="banner-overlay">
+    <div class="container text-center text-white py-5">
+
+      <h2 class="section-title mb-4">GET INSPIRED WITH ARTICLES AND TRAININGS ON:</h2>
+
+      <ul class="topics-list list-unstyled d-flex flex-wrap justify-content-center gap-4 mb-4">
+
+        <li class="topic-item">
+          <i class="fas fa-lightbulb me-2"></i>Life’s Solutions
+        </li>
+
+        <li class="topic-item">
+          <i class="fas fa-chart-line me-2"></i>Online Business
+        </li>
+
+        <li class="topic-item">
+          <i class="fas fa-bullhorn me-2"></i>Digital Evangelism
+        </li>
+
+        <li class="topic-item">
+          <i class="fas fa-heart me-2"></i>Relationship Insight
+        </li>
+
+        <li class="topic-item">
+          <i class="fas fa-ellipsis-h me-2"></i>More
+        </li>
+
+      </ul>
+
+      <a href="articles.html" class="btn btn-primary btn-lg">Explore Articles & Trainings</a>
+
+      <!-- Optional: Embed blog preview -->
+      <!--
+      <div class="blog-preview mt-5">
+        <iframe src="your-blog-embed-link" width="100%" height="400px" frameborder="0"></iframe>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 7: GROW YOUR FAITH -->
+<section id="grow-faith" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 section-title">Grow Your Faith</h2>
+
+    <div class="faith-carousel-wrapper position-relative">
+      <div class="faith-carousel d-flex overflow-auto gap-3 pb-3">
+
+        <!-- Faith Card 1 -->
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1886682" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>Podcast28 Episode 1 </h5>
+            <small>- Why Does Life Feel So Heavy On Me?</small>
+          </div>
+        </div>
+
+        <!-- Faith Card 2 -->
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1887950" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>THE GOSPEL PODCAST</h5>
+            <small>-ONLINE TO ONSITE PROLIFERATION</small>
+          </div>
+        </div>
+
+        <!-- Faith Card 3 -->
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1877778" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>PODCAST 28</h5>
+            <small>WHAT IS "P3" ALL ABOUT</small>
+          </div>
+        </div>
+
+        <!-- Repeat for all 10 videos -->
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1877759" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>PODCAST 28</h5>
+            <small>WELCOME TO P3</small>
+          </div>
+        </div>
+
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1883700" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>PODCAST 28</h5>
+            <small>BREAKING POWER OF ADDICTIONS</small>
+          </div>
+        </div>
+
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1877833" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>PODCAST 28</h5>
+            <small>WHY DEPRESSION?</small>
+          </div>
+        </div>
+
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1877597" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>ONLINE BIBLE STUDY</h5>
+            <small>REDEMPTION</small>
+          </div>
+        </div>  
+
+        <!-- <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1887950" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>SUNDAY SERVICE - NOV. 2ND</h5>
+            <small>REDEMPTION</small>
+          </div>
+        </div>  
+
+        <div class="faith-card flex-shrink-0 shadow-sm rounded">
+          <iframe src="https://embed.ceflix.org/video/1887950" 
+          width="560" height="315" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="p-3">
+            <h5>SUNDAY SERVICE - NOV. 2ND</h5>
+            <small>Sunday Service · December 01, 2025</small>
+          </div>
+        </div>   -->
+
+        <!-- Add Faith Cards 6–10 in same pattern -->
+
+      </div>
+
+      <!-- Optional scroll buttons -->
+      <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#faithCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#faithCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-area py-5 text-white">
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- ABOUT -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">About Us</h5>
+        <hr class="footer-line">
+        <p>
+          Airwaves Prayer Network is a dynamic online prayer platform where we confront
+          life’s challenges through fervent prayer, trusting in God's eagerness to respond.
+        </p>
+
+        <div class="d-flex gap-3 mt-4">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-vimeo"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <hr class="footer-line">
+
+        <ul class="list-unstyled footer-links">
+          <li><a href="#"><i class="fas fa-angle-right me-2"></i>Home</a></li>
+          <li><a href="#"><i class="fas fa-angle-right me-2"></i>Podcasts</a></li>
+          <li><a href="#"><i class="fas fa-angle-right me-2"></i>This Gospel Prayer Network</a></li>
+          <li><a href="#"><i class="fas fa-angle-right me-2"></i>Kingdom Missionary Leaders</a></li>
+          <li><a href="#"><i class="fas fa-angle-right me-2"></i>Online Prayer</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Us</h5>
+        <hr class="footer-line">
+
+        <p><i class="fas fa-phone-alt me-2"></i>+234 9027028252</p>
+        <p><i class="fas fa-envelope me-2"></i>Info@martinspiritman@gmail.com</p>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Newsletter</h5>
+        <hr class="footer-line">
+        <p>Subscribe to our weekly newsletter,podcasts and prayer articles</p>
+
+        <div class="input-group mt-3">
+          <input type="email" class="form-control" placeholder="Email Address">
+          <button class="btn btn-light">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="text-center mt-5 pt-4 border-top">
+      © Copyright 2025 | All Rights Reserved by
+      <a href="#" class="text-white fw-bold">Apex konnect</a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+
