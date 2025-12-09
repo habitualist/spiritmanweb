@@ -1,0 +1,777 @@
+/* ===== ROOT COLORS & GENERAL STYLES ===== */
+:root {
+  --primary-color: #0f64ac; /* Navy Blue */
+  --secondary-color: #ffd700; /* Yellow */
+  --accent-color: #e60000; /* Red */
+  --light-color: #fff;
+  --dark-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  padding: 0.8rem 0;
+}
+
+.navbar .navbar-brand {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.navbar .navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar .nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--primary-color);
+}
+
+.navbar .dropdown-menu {
+  background: var(--primary-color);
+  border: none;
+  min-width: 200px;
+}
+
+.navbar .dropdown-item {
+  color: var(--light-color);
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.navbar .btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border: none;
+}
+
+.navbar .btn-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+/* ===== HERO / CAROUSEL ===== */
+#hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8%;
+}
+
+.hero-slide .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-slide h1 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-slide p {
+  font-size: 1.25rem;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.hero-slide .btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+}
+
+.hero-slide .btn-primary:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Video Background */
+.hero-slide video.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+  background-color: var(--secondary-color);
+}
+
+.carousel-indicators .active {
+  background-color: var(--accent-color);
+}
+
+/* ===== WATCH ONLINE SECTION ===== */
+#watch-online {
+  padding: 4rem 0;
+  background: #f8f9fa; /* Soft light grey to match your website design */
+}
+
+#watch-online h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* Video Card */
+#watch-online .card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+#watch-online iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Under-video title */
+#watch-online .card h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Comment Box */
+#watch-online textarea {
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+#watch-online button.btn-primary {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+  padding: 0.7rem 2rem;
+}
+
+#watch-online button.btn-primary:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* Language Buttons */
+#watch-online .btn-outline-primary,
+#watch-online .btn-outline-secondary {
+  padding: 0.7rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#watch-online .btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+#watch-online .btn-outline-primary:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+#watch-online .btn-outline-secondary {
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#watch-online .btn-outline-secondary:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Action Buttons */
+#watch-online a.btn {
+  font-weight: 700;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#watch-online a.btn-primary {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+#watch-online a.btn-primary:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+#watch-online a.btn-success {
+  background: #28a745;
+  color: #fff;
+  border: none;
+}
+
+#watch-online a.btn-success:hover {
+  opacity: 0.8;
+}
+
+#watch-online a.btn-warning {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+#watch-online a.btn-warning:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* Rhapsody Insight Card */
+#watch-online .card-body h5 {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+#watch-online .card-body p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#watch-online .btn-outline-primary {
+  border: 2px solid var(--primary-color);
+  font-weight: 700;
+}
+
+#watch-online .btn-outline-primary:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  #watch-online {
+    text-align: center;
+  }
+
+  #watch-online .btn {
+    width: 100%;
+  }
+
+  #watch-online textarea {
+    width: 100%;
+  }
+}
+
+/* GENERAL SHARED BANNER SECTION (same as section 2) */
+.section-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* overlay like section 2 */
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+  padding: 80px 20px;
+}
+
+/* ===== Banner Section ===== */
+#salvation-section .salvation-banner-link {
+  width: 85%;
+  max-width: 1200px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 2rem auto;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#salvation-section .salvation-banner-link:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Banner Image */
+#salvation-section .salvation-banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay with Prayer Icon */
+#salvation-section .banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 15px;
+}
+
+#salvation-section .salvation-banner-link:hover .banner-overlay {
+  opacity: 1;
+}
+
+/* Pulsating Prayer Icon */
+#salvation-section .banner-overlay i {
+  font-size: 3rem;
+  color: #fff;
+  animation: pulse 1.5s infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Optional Banner Text Overlay */
+#salvation-section .banner-text {
+  background: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Section Heading & Subtitle */
+#salvation-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+#salvation-section .section-subtitle {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* WhatsApp Button */
+#salvation-section .btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+#salvation-section .btn-whatsapp:hover {
+  background-color: #128C7E;
+  color: #fff;
+}
+
+/* Modal Styling */
+#salvation-section .modal-content {
+  border-radius: 15px;
+}
+
+#salvation-section .modal-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  #salvation-section .banner-text {
+    padding: 1.5rem;
+  }
+
+  #salvation-section .section-title {
+    font-size: 1.5rem;
+  }
+
+  #salvation-section .section-subtitle {
+    font-size: 1rem;
+  }
+
+  #salvation-section .banner-overlay i {
+    font-size: 2.5rem;
+  }
+}
+
+/* DUAL CARD SECTION */
+#dual-section .dual-card {
+  background: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#dual-section .dual-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+#dual-section .dual-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+#dual-section .dual-card p {
+  font-size: 1.05rem;
+  color: var(--light-color);
+}
+
+#dual-section .dual-card a.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+}
+
+#dual-section .dual-card a.btn-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+#dual-section .dual-card a.btn-secondary {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+}
+
+#dual-section .dual-card a.btn-secondary:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  #dual-section .dual-card a {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+/* SECTION 6 - Inspiration & Trainings */
+#inspiration-section {
+  background-image: url("asset/SLIDE BANNERS/inspiration-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  position: relative;
+  color: #fff;
+}
+
+#inspiration-section .banner-overlay {
+  background: rgba(0,0,0,0.55);
+  width: 100%;
+  height: 100%;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#inspiration-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+#inspiration-section .topics-list {
+  font-size: 1.1rem;
+}
+
+#inspiration-section .topic-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#inspiration-section .topic-item i {
+  font-size: 1.2rem;
+}
+
+#inspiration-section .topic-item:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#inspiration-section .btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+}
+
+#inspiration-section .btn-primary:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  #inspiration-section .section-title {
+    font-size: 2rem;
+  }
+
+  #inspiration-section .topics-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #inspiration-section .topic-item {
+    justify-content: center;
+  }
+}
+
+/* SECTION 7 - GROW YOUR FAITH */
+#grow-faith .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.faith-card {
+  overflow: hidden;
+  transition: transform 0.3s;
+  background: #fff;
+}
+
+.faith-card:hover {
+  transform: translateY(-5px);
+}
+
+.faith-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.faith-card .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--secondary-color);
+  background: rgba(0,0,0,0.4);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.faith-card .play-btn:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.faith-card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.faith-card small {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .faith-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faith-card img {
+    height: 160px;
+  }
+}
+
+
+/* ===== FOOTER ===== */
+.footer-area {
+  background: var(--primary-color);
+  font-size: 14px;
+  color: var(--light-color);
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-line {
+  width: 60px;
+  height: 3px;
+  background: var(--light-color);
+  border: none;
+  margin: 8px 0 20px 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+footer .input-group input {
+  border-radius: 0;
+  border: none;
+}
+
+footer .input-group button {
+  border-radius: 0;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+footer .input-group button:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 991px) {
+  .hero-slide h1 {
+    font-size: 2rem;
+  }
+
+  .hero-slide p {
+    font-size: 1rem;
+  }
+
+  .hero-slide {
+    padding-left: 4%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar .btn-primary {
+    margin-top: 0.5rem;
+  }
+}
